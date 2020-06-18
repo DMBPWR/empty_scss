@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+$green: #33cc66;
+$white: #fff;
+$dark: #333;
+$grey: #666;
+$yellow: #ffff00;
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  margin-top: 123px;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 44.5px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 14px;
+}
+p {
+
+}
+
+input {
+  border: none;
+  outline: none;
+  margin-right: 16px;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+
+.container {
+  height: 100%;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 85%;
+  }
+}

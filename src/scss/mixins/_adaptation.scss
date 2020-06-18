@@ -1,0 +1,49 @@
+@mixin breakpoint($point) {
+  @if $point == full {
+    @media (min-width: 1200px) { @content; }
+  } @else if $point == product-interactions {
+    @media (max-width: 1332px) { @content; }
+  } @else if $point == full-max {
+    @media (max-width: 1200px) { @content; }
+  } @if $point == full-down {
+  @media (max-width: 1199px) { @content; }
+} @else if $point == large {
+  @media (min-width: 720px) { @content; }
+} @else if $point == tablet {
+  @media (min-width: 720px) and (max-width: 960px) { @content; }
+} @else if $point == small {
+  @media (max-width: 719px) { @content; }
+} @else if $point == phone {
+  @media (max-width: 480px) { @content; }
+} @else if $point == recommended-special {
+  @media (max-width: 840px) { @content; }
+} @else if $point == slideshow-special {
+  @media (max-width: 938px) { @content; }
+} @else if $point == minimal {
+  @media (max-width: 959px) { @content; }
+} @else if $point == minimal-large {
+  @media (min-width: 960px) { @content; }
+} @else if $point == device {
+  @media (max-device-width: 1024px) { @content; }
+} @else if $point == mobile-nav {
+  @media (max-width: 719px) { @content; }
+} @else if $point == fix {
+  @media (max-width: 1125px) { @content; }
+}
+}
+
+@mixin button($width, $height, $bgcolor) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+  background-color: $bgcolor;
+  font-style: normal;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: $white;
+}
